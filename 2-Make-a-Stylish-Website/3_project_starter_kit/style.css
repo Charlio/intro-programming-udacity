@@ -3,3 +3,43 @@ enclosed by different characters than HTML comments. */
 
 /* CSS allows you to give your page style (colors, shapes, fonts, etc.)
 You can apply CSS elements to entire HTML classes.*/
+h1 {
+    text-align:center;
+    color:black;
+}
+
+h2 {
+    text-align:center;
+    color: #696f77;
+}
+
+ol {
+    text-align:center;
+    list-style-position:inside;
+}
+
+section {
+    display:block;
+    background-color:#edf2f9;
+    margin-left:300px;
+    margin-right:300px;
+    border-radius:20px;
+}
+
+article {
+    margin-left:40px;
+    margin-right:40px;
+}
+
+.table_of_contents {
+    background-color:#d4e1f4;
+    margin-left:350px;
+    margin-right:350px;
+}
+
+.concept {
+    background-color:#b8ceed;  
+}
+.example {
+    background-color:#eae7c2;
+}

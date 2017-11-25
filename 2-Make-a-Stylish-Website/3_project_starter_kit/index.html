@@ -1,13 +1,161 @@
 <!-- This is an HTML comment. Comments allow you to communicate with other programmers using
 text that will be ignored by the computer! -->
 <!DOCTYPE html> <!-- The DOCTYPE tells the browser what kind of document this is (HTML) -->
+<html lang="en">
 <head> <!-- The head tag includes important information about the page -->
   <meta charset="UTF-8"> <!-- This line defines something called "character encoding"
   This will allow the browser to display certain characters (such as non-Roman letters) correctly.
   You should include this line in the head of all of your webpages. -->
-  <title>My Notes</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
+  <title>My Notes On HTML</title> <!-- This is the title of your page (what appears in the name of a browser tab) -->
   <link rel="stylesheet" href="style.css"> <!-- This line links your CSS stylesheet to your HTML -->
 </head>
 <body> <!-- The body tag is where the "flesh" of your HTML goes -->
   <!-- Write your main HTML content here -->
+  
+  <!--Table of Contents -->
+  <div class="table_of_contents">
+    <h1>Table of Contents</h1>
+    <ol>
+        <li><a href="#www">The World Wide Web</a></li>
+        <li><a href="#intro_html">Introduction to HTML</a></li>
+        <li><a href="#markup">HTML Markup</a></li>
+        <li><a href="#doc">Documentation</a></li>
+        <li><a href="#html_struct">HTML document structure</a></li>
+    </ol>
+  </div>
+  <section class="www">
+    <h2>The World Wide Web</h2>
+    <article class="concept">
+        <h2>The Web</h2>
+        <p>The web is composed largely of <strong>HTML</strong> documents.</p>
+    </article>
+    <article class="concept">
+        <h2>HTML</h2>
+        <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em><br>
+        and is the language the browsers use to interpret web pages.</p>
+    </article>
+    <article class="concept">
+        <h2>Components of the Web</h2>
+        <p>The components of the web include the client (your computer and browser),<br> 
+        the Internet, and servers. The client and servers interact through something <br>
+        called the Hypertext Transfer Protocol (HTTP).</p>
+    </article>
+  </section>
+  <section class="intro_html">
+    <h2>Introduction to HTML</h2>
+    <p>HTML acronym: HyperText Markup Language</p>
+    <article class="concept">
+        <h2>Components</h2>
+            <ol>
+                <li>text content: what you see</li>
+                <li>markup: what it looks like</li>
+                <li>references to other documents: e.g. images and videos</li>
+                <li>links to other web pages</li>
+            </ol>
+    </article>
+  </section>
+  <section class="markup">
+    <h2>HTML Markup</h2>
+    <article class="concept">  
+        <h2>General Structure</h2>
+        <ul>
+            <li>&amp;lt NAME &amp;gt Contents &amp;lt/NAME&amp;gt </li>
+            <li>NAME: tag name</li>
+            <li>Contents: tag contents</li>
+            <li>&amp;lt NAME &amp;gt: opening tag</li>
+            <li>&amp;lt /NAME &amp;gt: closing tag</li>
+            <li> &amp;lt NAME &amp;gt Contents &amp;lt /NAME &amp;gt: element</li>
+        </ul>
+    </article>
+    <article class="example">
+        <h2>Simple Examples</h2>
+        <ol>
+            <li><b>Bold Tage</b></li>
+            <li> &amp;lt b &amp;gt Text Contents &amp;lt /b &amp;gt </li>
+            <li>b stands for <b>bold</b></li>
+            <li>One can also use the tag name <strong>strong</strong></li>
+            <li><em>Italic</em></li>
+            <li>&amp;lt em &amp;gt Text Contents &amp;lt /em &amp;gt </li>
+            <li>em stands for <em>emphasis</em></li>
+        </ol>
+    </article>
+    <article class="example">
+        <h2>Links</h2>
+        <ul>
+            <li><a href="https://www.udacity.com/">This is a link to Udacity</a></li>
+            <li>&amp;lt a href="some url" &amp;gt customized name for the link &amp;lt /a &amp;gt </li>
+            <li>a stands for anchor</li>
+        </ul>
+    </article>
+    <article class="example">
+        <h2>Images <img src="udacity_logo.jpg" alt="Udacity Logo"></h2>
+        <ul>
+            <li> &amp;lt img src="url or file path", alt="text if image not available" &amp;gt </li>
+            <li>img is a <strong>void tag</strong> which means it has no closing tag</li>
+            <li>image is inserted inline of text</li>
+        </ul>
+    </article>    
+    <article class="example">
+        <h2>Break lines</h2>
+        <ul>
+            <li>whitespace in html file not work for display, need to use <br> 
+            &amp;lt br &amp;gt to break a long line into several lines</li>
+            <li>br stands for break and it is also a void tag</li>
+        </ul>      
+    </article>
+    <article class="example">
+        <h2>Paragraph</h2>
+        <p>
+            We can use the tag <strong>p</strong> which represents paragraph to make a
+            block.
+        </p>
+    </article>
+    <article class="concept">
+        <h2>Inline vs Block Elements</h2>
+        <p>
+            <em>inline</em> elements end a line. <strong>em</strong>, <strong>img</strong>, <strong>span</strong>
+            are all inline tags. Meanwhile, <em>block</em> elemnts make invisible boxes. <strong>div</strong>,
+            <strong>section</strong>, <strong>article</strong> are all block tags.
+        </p>
+    </article> 
+  </section>
+  <section class="doc">
+    <h2>Documentation</h2>
+        Documentation is important to further study html and css online. The following websites are useful:
+    <ol>
+        <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN - Mozilla Developer Network</a></li>
+    </ol>
+  </section>
+  <section class="html_struct">
+    <h2>HTML document structure</h2>
+    <p>doctype is something that should appear on every webpage you make. 
+            &amp;lt !DOCTYPE html &amp;gt defines the type of the document so the 
+            browser will render it correctly.
+    </p>
+    <p>
+        The &amp;lt html &amp;gt tag opens our document. Everything that shows 
+             on the webpage is placed within this tag.
+    </p>
+    <p>
+        The &amp;lt head &amp;gt tag defines metadata for our web page. 
+             This includes the title of the page (this is what 
+             appears in the top of your tab or browser window)
+        The &amp;lt title &amp;gt tag is also defined in &amp;lt head &amp;gt
+    </p>
+    <p>
+        We write most of the contents inside the &amp;lt body &amp;gt &amp;lt /body &amp;gt tags.
+    </p>
+  </section> 
 </body>
+</html>
+
+
+
+
+
+
+
+
+
+
