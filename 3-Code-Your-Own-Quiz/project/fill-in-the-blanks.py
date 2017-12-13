@@ -42,9 +42,20 @@ def update_text(text, blank, ans):
     return " ".join(replaced)
     
 def get_user_level():
+    """get level from user input
+    
+    This function asks the user to provide the level (easy, medium, hard) of
+    the game. If user types in invalid input, then it asks the user to select 
+    again.
+    
+    arguments:
+        None
+    return:
+        string, user level (easy, medium, hard)
+    """
     user_level = input("Please select a game difficulty by typing it in!\nPossible choices include easy, medium, and hard.\n")
     while user_level not in LEVELS:
-        user_level = input("That's not an option!\nPlease select a game difficulty by typing it in!\nPossible choices include easy, medium, and hard.\n")
+        user_level = input("That's not an option!\nPlease select a game difficulty by typing it in!\n\Possible choices include easy, medium, and hard.\n")
     print("You've Chosen " + user_level + "!\n\n" + "You will get " + str(TRIES) + " guesses per problem")
     return user_level
     
